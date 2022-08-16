@@ -11,7 +11,7 @@
 
 <style>
 	.title{
-		font-size: 128px;
+		font-size: 250px;
 	}
 </style>
 	<!-- <ul>

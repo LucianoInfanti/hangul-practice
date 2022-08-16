@@ -32,8 +32,6 @@
 
 function checkAnswer(value) {	
 		if ( randomArray[value] === randomArray[rightAnswer] ) {
-			answer = !answer; 
-			current = 'default';
 			const count = counter++;
 		} else {
 			answer = false;

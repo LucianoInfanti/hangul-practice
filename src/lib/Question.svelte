@@ -6,16 +6,16 @@
 </script>
 
 <main>
-	<h1 class="title">{Data[x].character}</h1>
+		<h1 class="title">{Data[x].character}</h1>
 </main>
 
 <style>
-	.title{
-		font-size: 250px;
+	h1 {
+		margin-block-start: 0.5em;
+		margin-block-end: 0em;
 	}
+.title{
+		font-size: 250px;		
+	}
+	
 </style>
-	<!-- <ul>
-		{#each Data as {character}}
-			<li>{character}</li>
-		{/each}
-	</ul>  -->

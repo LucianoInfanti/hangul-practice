@@ -1,7 +1,6 @@
 :root {
   font-family: Helvetica;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 16px;
   font-weight: 200;
   color-scheme: light dark;
   color: white;
@@ -16,30 +15,16 @@
 
 body {
   margin: 0;
-  display: flex;
-  min-width: 320px;
-  min-height: 100vh;
   overflow-y: hidden;
   overflow-x: hidden;
 }
-
-#app {
-}
-
 button {
   border: 1px solid transparent;
-  
-  margin: 1em 1em;
-  padding-bottom: 16px;
-  font-size: 32px;
+  margin-right: 10px;
+  font-size: 18px;
   background-color: black;
-}
-#wrong0:hover #wrong1 {
-  background-color: tomato;
 }
 
 button:hover {
   cursor: pointer;
-
-
 }

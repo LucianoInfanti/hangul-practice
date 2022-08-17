@@ -22,10 +22,14 @@
 	justify-content: space-between;
 	align-items: center;
 	margin-top: 16px;
+	margin-left: 40px;
+	margin-right: 40px;
+	transition: 0.4s;
 }
 .dash { 
 	color: #3f3f3f;
-	margin-left: 16px;
-	margin-right: 16px;
+	margin-left: 4px;
+	transition: 0.4s;
+	margin-right: 4px;
 }
 </style>

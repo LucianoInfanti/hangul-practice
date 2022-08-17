@@ -10,17 +10,17 @@
 
 	let randomArray = [];
 	let finalArray = [];
-	let tempVar = [];
 
 	let rightAnswer = Math.floor(Math.random() * 5); 
 
 	randomizeButtonAnswer();
 
 	function randomizeButtonAnswer() {
+		let lastArray = randomArray;
 		randomArray = [];
 			for (let i=0; i < 5; i++){
 				let randomNumber = Math.floor(Math.random() * Data.length); 
-					if (!randomArray.includes(randomNumber)) {
+					if (!randomArray.includes(randomNumber) && !lastArray.includes(randomNumber)) {
 						randomArray.push(randomNumber);	
 					} else {
 						i--;
@@ -30,16 +30,16 @@
 	}
 
 	function generateNextRightAnswerIndex() {
-		tempVar = finalArray[rightAnswer];
-		rightAnswer = Math.floor(Math.random() * 5);
-		if (finalArray[rightAnswer] === tempVar){
+		let lastIndex = rightAnswer;
+		rightAnswer = Math.floor(Math.random() *5);
+		while(rightAnswer === lastIndex){
 			rightAnswer = Math.floor(Math.random() * 5);
 		}
 	}
 
 	function checkAnswer(value) {	
 			colorizeWrong(finalArray[value]);
-			if ( finalArray[value] === finalArray[rightAnswer] ) {
+			if ( value === rightAnswer ) {
 				randomizeButtonAnswer();
 				generateNextRightAnswerIndex();
 				const count = counter++;
@@ -126,21 +126,15 @@
 <style>
 	.child{
 		padding-bottom:8px;
-		border-bottom: 0.5px solid white;
+		border-bottom: 0.5px solid #3F3F3F;
 		min-width: 44px;
 		transition: 0.4s;
 	}
 
-	.parent:hover .child {
-		border-bottom: 0.5px solid #3F3F3F;
-		color: #3F3F3F;
+	.child:hover{
+		border-bottom: 0.5px solid white;
 	}
 
-	.parent .child:hover{
-		border-bottom: 0.5px solid white;
-		color: white;
-	}
-	
 	.content-wrapper{
 		display: flex;
 		flex-direction: column;
@@ -173,6 +167,7 @@
 		color: #3F3F3F;
 		font-size: 14px;
 		margin-top: 10%;
+		margin-right: 0px;
 		margin-bottom: 30px;
 	}
 </style>

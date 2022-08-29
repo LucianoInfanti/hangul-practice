@@ -1,6 +1,6 @@
 <script>
-	import Data from '/Users/lucianoinfanti/hangultest/src/data/data.json';
-	import Question from '/Users/lucianoinfanti/hangultest/src/lib/Question.svelte';
+	import Data from '../data/data.json';
+	import Question from './Question.svelte';
 	import Header from './Header.svelte';
 
 	let counter = 0;

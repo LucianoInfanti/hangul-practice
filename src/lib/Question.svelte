@@ -1,7 +1,5 @@
 <script>
-	import Data from '/Users/lucianoinfanti/hangultest/src/data/data.json';
-	
-	// export let choosenQuestion = Math.round(Math.random() * Data.length)
+	import Data from '../data/data.json';
 	export let x;
 </script>
 

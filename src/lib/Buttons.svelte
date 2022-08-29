@@ -1,5 +1,5 @@
 <script>
-	import Data from './data/data.json';
+	import Data from '../data/data.json';
 	import Question from './Question.svelte';
 	import Header from './Header.svelte';
 

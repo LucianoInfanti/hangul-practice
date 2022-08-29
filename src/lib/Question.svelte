@@ -1,5 +1,6 @@
 <script>
 	import Data from '../data/data.json';
+	
 	export let x;
 </script>
 
